@@ -1,0 +1,15 @@
+<div class="container">
+    <h2>The Student Grid</h2>
+    <div class="container">
+        <p>
+            <strong>The Selected Student</strong>
+        </p>
+        <hr>
+        <div class="form-group">
+            {{data}}
+        </div>
+    </div>
+    <hr>
+    <hr>
+    <app-table-component [DataSource]="students" (notify)="subscribeToData($event)"></app-table-component>
+</div>
